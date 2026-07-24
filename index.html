@@ -134,6 +134,7 @@
 
 <header>
   <h1>Sistema de Gestión de Préstamos de Equipamiento Tecnológico (SGPET)</h1>
+  <h2>Ficha 6 - Factibilidad</h2>
   <p>Ingeniería de Software · Ce.R.P. del Suroeste · 2026</p>
   <p>Castro · Sáenz · Sánchez</p>
 </header>
@@ -151,8 +152,8 @@
 
   <section id="proyecto">
     <h2>El proyecto</h2>
-    <p>El Laboratorio de Informática de la institución gestiona actualmente el préstamo de computadoras portátiles (Ceibalitas) e insumos del espacio Ceilab (placas Micro:bit, kits de robótica, impresoras 3D y sensores fisicoquímicos) mediante planillas en papel o planillas electrónicas en Drive. Este método genera falta de control sobre la disponibilidad real, dificultad para rastrear responsables y devoluciones, pérdida de información sobre daños, y ausencia de un historial de uso.</p>
-    <p>Nuestro proyecto, el <strong>Sistema de Gestión de Préstamos de Equipamiento Tecnológico (SGPET)</strong> propone digitalizar este proceso mediante el diseño de un sistema: inventario, registro de usuarios, préstamos, reservas, devoluciones e historial de uso, contemplando tres perfiles de acceso.</p>
+    <p>El Laboratorio de Informática de una institución educativa gestiona actualmente el préstamo de computadoras portátiles (Ceibalitas) e insumos del espacio Ceilab (placas Micro:bit, kits de robótica, impresoras 3D y sensores fisicoquímicos) mediante planillas en papel o planillas electrónicas en Drive. Este método genera falta de control sobre la disponibilidad real, dificultad para rastrear responsables y devoluciones, pérdida de información sobre daños, y ausencia de un historial de uso.</p>
+    <p>Nuestro proyecto, el <strong>Sistema de Gestión de Préstamos de Equipamiento Tecnológico (SGPET)</strong>, propone digitalizar este proceso mediante el diseño de un sistema: inventario, registro de usuarios, préstamos, reservas, devoluciones e historial de uso, contemplando tres perfiles de acceso.</p>
     <div class="badge-row">
       <span class="badge">👤 Administradores (funcionarios de Sala)</span>
       <span class="badge">👩‍🏫 Docentes</span>
@@ -169,7 +170,7 @@
     <div class="cards">
       <div class="card">
         <h4><span class="icon">🗣️</span>Entrevista estructurada</h4>
-        <p>Aplicada a funcionarios de la Sala. Reveló registro lento y repetitivo, ausencia de reservas sistemáticas, control informal del estado de los equipos (WhatsApp, notas dispersas) y necesidad de un historial por usuario.</p>
+        <p>Aplicada a funcionarios docentes encargados de la Sala de Informática. Reveló registro lento y repetitivo, ausencia de reservas sistemáticas, control informal del estado de los equipos (WhatsApp, notas dispersas) y necesidad de un historial por usuario.</p>
       </div>
       <div class="card">
         <h4><span class="icon">📋</span>Cuestionario</h4>
@@ -225,28 +226,58 @@
 
   <section id="factibilidad">
     <h2>Análisis de factibilidad</h2>
-    <p>Siguiendo a Pressman, la factibilidad se analiza como parte del estudio de viabilidad previo al desarrollo, para determinar si el proyecto es viable y conveniente. A continuación se analizan las cuatro dimensiones aplicadas al SGPET, con evidencias surgidas de las técnicas de elicitación.</p>
+    <p>Pressman y Maxim (2020) sostienen que el análisis de factibilidad constituye una etapa crítica del estudio de viabilidad, cuyo propósito es evaluar si el proyecto debe llevarse adelante considerando aspectos operativos, técnicos, económicos y legales. Sommerville (2011) coincide en que esta evaluación temprana permite anticipar riesgos, comprender las restricciones del entorno y asegurar que el sistema pueda desarrollarse y adoptarse de manera sostenible. La información utilizada para fundamentar este análisis proviene de la triangulación de las tres técnicas de elicitación aplicadas: entrevistas estructuradas, cuestionarios y observación directa ("mosca en la pared").</p>
 
     <h3>🔧 Factibilidad operativa</h3>
-    <p>Evalúa si el sistema será aceptado y efectivamente utilizado por la institución. Los tres perfiles de usuario (administradores, docentes, estudiantes) ya manifestaron, en la entrevista y el cuestionario, la necesidad concreta de agilizar el registro, contar con reservas y recibir notificaciones, lo que indica una alta predisposición al cambio.</p>
-    <div class="evidencia"><strong>Evidencia:</strong> los funcionarios señalaron que el procedimiento manual "resulta lento, repetitivo y susceptible a errores"; los usuarios pidieron recordatorios de devolución y visibilidad del estado del equipamiento en su perfil.</div>
-    <div class="riesgo"><strong>Riesgo:</strong> usuarios asiduos acostumbrados al procedimiento actual podrían resistirse al cambio de rutina; se requiere capacitación breve al implementar.</div>
-
+    <p>La factibilidad operativa analiza si el sistema puede integrarse adecuadamente en la organización y si los usuarios aceptarán los cambios que implica su implementación. Pressman afirma que un sistema es operativamente viable cuando <em>"responde a las expectativas del usuario y se adapta a los procedimientos existentes"</em> (Pressman &amp; Maxim, 2020). Los tres perfiles de usuario (administradores, docentes, estudiantes) ya manifestaron, en la entrevista y el cuestionario, la necesidad concreta de agilizar el registro, contar con reservas y recibir notificaciones, lo que indica una alta predisposición al cambio.</p>
+    <div class="evidencia"><strong>Evidencia:</strong> los funcionarios señalaron que el procedimiento manual "resulta lento, repetitivo y susceptible a errores"; los usuarios pidieron recordatorios de devolución y visibilidad del estado del equipamiento en su perfil. La observación directa confirmó filas en los turnos de mayor demanda y procedimientos repetitivos que saturan la capacidad operativa del laboratorio.</div>
+  <div class="riesgo"><strong>Riesgo:</strong> usuarios asiduos acostumbrados al procedimiento actual podrían resistirse al cambio de rutina; se requiere una instancia breve de capacitación inicial para asegurar la adopción plena por parte de todos los usuarios.</div>
+<p><strong>Veredicto:</strong> factibilidad operativa <strong>alta</strong>.</p>
+    
     <h3>💻 Factibilidad técnica</h3>
-    <p>Analiza si existen los recursos tecnológicos y las capacidades para desarrollar e implementar el sistema. La Sala de Informática ya cuenta con computadoras, conectividad y equipos identificados individualmente, lo que facilita la carga inicial del inventario. El equipo de desarrollo cursa Ingeniería de Software, con formación adecuada para construir una aplicación web o de escritorio con base de datos.</p>
-    <div class="evidencia"><strong>Evidencia:</strong> los equipos ya poseen identificación individual (sticker institucional numerado), insumo directo para un inventario digital sin relevamiento adicional mayor.</div>
-    <div class="riesgo"><strong>Riesgo:</strong> la dependencia de conectividad estable en los turnos de mayor demanda (mañana y noche, donde se observaron colas) exige que el sistema funcione con buen desempeño incluso bajo uso simultáneo.</div>
-
+   <p>La factibilidad técnica evalúa si la tecnología necesaria está disponible y si el equipo de trabajo posee las competencias para implementarla. Sommerville sostiene que esta dimensión implica determinar si <em>"el sistema puede construirse con la tecnología disponible y dentro de las restricciones del entorno"</em> (Sommerville, 2011). El SGPET requiere gestionar inventarios, usuarios, reservas y registros de estado: funcionalidades técnicamente estándar, realizables mediante bases de datos relacionales, aplicaciones web y módulos de autenticación. La Sala de Informática ya cuenta con computadoras, conectividad y equipos identificados individualmente, y el equipo de desarrollo cursa Ingeniería de Software, con formación adecuada para construirlo.</p>
+     <div class="evidencia"><strong>Evidencia:</strong> los equipos ya poseen identificación individual (sticker institucional numerado), insumo directo para un inventario digital sin relevamiento adicional mayor; además, el uso actual de planillas electrónicas confirma que los usuarios ya están familiarizados con herramientas digitales.</div>
+    <div class="riesgo"><strong>Riesgo:</strong> se deberá estandarizar la identificación de los equipos, definir un mecanismo sistemático para registrar fallas y daños, asegurar compatibilidad con los sistemas institucionales existentes y contar con un esquema de respaldo y recuperación de datos. La dependencia de conectividad estable en los turnos de mayor demanda exige buen desempeño incluso bajo uso simultáneo.</div>
+    <p><strong>Veredicto:</strong> factibilidad técnica <strong>alta</strong>.</p>
+    
     <h3>💰 Factibilidad económica</h3>
-    <p>Evalúa si los costos de desarrollo e implementación se justifican frente a los beneficios. Al tratarse de un proyecto académico, el desarrollo puede apoyarse en herramientas y tecnologías gratuitas o de bajo costo (frameworks open source, hosting gratuito para una primera versión), minimizando la inversión inicial.</p>
-    <div class="evidencia"><strong>Evidencia:</strong> el proceso actual ya insume tiempo de funcionarios en registro repetitivo de los mismos datos en cada préstamo; automatizarlo reduce ese costo operativo sin requerir inversión en nuevo hardware, dado que se reutiliza el equipamiento existente.</div>
+     <p>La factibilidad económica analiza si los costos del proyecto son justificables en relación con los beneficios esperados; Pressman señala que esta evaluación debe considerar esfuerzo, recursos humanos, infraestructura y costos operativos (Pressman &amp; Maxim, 2020). En el caso del SGPET los costos son moderados: no se requiere equipamiento adicional significativo, ya que se reutiliza el equipamiento y la conectividad existentes, y al tratarse de un proyecto académico el desarrollo puede apoyarse en herramientas gratuitas o de bajo costo. Los beneficios, en cambio, son sustanciales: reducción de errores, disminución de tiempos de espera, mejor control del estado de los equipos y trazabilidad completa del inventario.</p>
+    <div class="evidencia"><strong>Evidencia:</strong> el proceso actual ya insume tiempo de funcionarios en registro repetitivo de los mismos datos en cada préstamo, además de generar pérdidas de tiempo, conflictos y fallas no registradas — costos ocultos para la institución que el SGPET permitiría reducir.</div>
     <div class="riesgo"><strong>Riesgo:</strong> el mantenimiento y hosting a largo plazo, más allá del prototipo académico, requeriría definir quién asume ese costo institucionalmente.</div>
-
+    <p><strong>Veredicto:</strong> factibilidad económica <strong>favorable</strong>, ya que los beneficios esperados superan ampliamente los costos de implementación.</p>
+    
     <h3>⚖️ Factibilidad legal</h3>
-    <p>Considera el cumplimiento normativo, especialmente en el tratamiento de datos personales. El sistema registrará datos como cédula de identidad, nombre, grupo y celular de contacto de estudiantes y docentes, por lo que debe ajustarse a la Ley N.º 18.331 de Protección de Datos Personales de Uruguay y a las normas internas de la institución.</p>
-    <div class="evidencia"><strong>Evidencia:</strong> según lo observado, hoy ya se solicita cédula de identidad en el registro en papel/planilla, sin protocolos claros de resguardo; el SGPET debería mejorar, no empeorar, ese resguardo.</div>
+   <p>La factibilidad legal considera las normativas que regulan el manejo de datos personales, la protección de información y el uso de recursos institucionales. El SGPET manejará información personal básica de estudiantes y docentes (nombre, cédula de identidad, grupo, celular de contacto e historial de préstamos), por lo que debe ajustarse a la <strong>Ley N.º 18.331</strong> de Protección de Datos Personales de Uruguay y a las normas internas de la institución. El sistema deberá asegurar confidencialidad, acceso restringido y mecanismos de seguridad adecuados.</p>
+    <div class="evidencia"><strong>Evidencia:</strong> según lo observado, hoy ya se solicita cédula de identidad en el registro en papel/planilla, sin protocolos claros de resguardo; el SGPET debería mejorar, no empeorar, ese resguardo de la información.</div>
     <div class="riesgo"><strong>Riesgo:</strong> es necesario definir consentimiento informado, accesos diferenciados por rol y políticas de retención/eliminación de datos personales.</div>
+    <p><strong>Veredicto:</strong> factibilidad legal <strong>viable</strong>, siempre que se integren protocolos de seguridad y se limite el acceso a información sensible.</p>
 
+      <h3>Evidencias que comprometen o fortalecen la factibilidad</h3>
+    <p>La evidencia empírica recogida mediante las técnicas de elicitación permite identificar, por dimensión, qué fortalece el proyecto y qué requiere atención antes o durante el desarrollo:</p>
+    <table>
+      <tr><th>Dimensión</th><th>Fortalece</th><th>Requiere atención</th></tr>
+      <tr>
+        <td>Operativa</td>
+        <td>El sistema actual es ineficiente y los tres perfiles de usuario manifiestan demanda genuina de digitalización, lo que refuerza la necesidad del SGPET.</td>
+        <td>Capacitación inicial breve para asegurar la adopción plena.</td>
+      </tr>
+      <tr>
+        <td>Técnica</td>
+        <td>La infraestructura institucional existente (computadoras, conectividad, equipos identificados) es suficiente.</td>
+        <td>Estandarizar la identificación de equipos y definir protocolos de registro digital y respaldo.</td>
+      </tr>
+      <tr>
+        <td>Económica</td>
+        <td>Los problemas actuales generan costos ocultos (tiempo, conflictos, fallas no registradas) que el SGPET reduce.</td>
+        <td>El costo principal será el desarrollo del sistema y su mantenimiento a largo plazo.</td>
+      </tr>
+      <tr>
+        <td>Legal</td>
+        <td>No hay impedimento normativo para el proyecto.</td>
+        <td>El manejo de datos personales exige medidas de seguridad y políticas de acceso claras.</td>
+      </tr>
+    </table>
+    
     <h3>¿Alguna factibilidad es más importante que las demás?</h3>
     <p>Las cuatro dimensiones son interdependientes, pero en este proyecto la <strong>factibilidad operativa</strong> resulta determinante: aun con la tecnología y el presupuesto disponibles, el sistema solo resuelve los problemas detectados si los tres perfiles de usuario lo adoptan efectivamente en su rutina diaria. Las evidencias relevadas muestran, sin embargo, una demanda genuina de digitalización por parte de todos los actores, lo que reduce ese riesgo.</p>
 
