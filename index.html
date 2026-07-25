@@ -128,6 +128,29 @@
     text-align:center;padding:28px;color:#7f8c8d;font-size:.85rem;
   }
   a.ref{color:var(--azul-claro);}
+   /* Gauges de veredicto dentro de la tabla */
+  td.veredicto-cell{text-align:center;min-width:110px;}
+  .veredicto-inner{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+  }
+  .mini-gauge{width:64px;height:64px;display:block;margin:0 auto 6px;}
+  .dash-verdict{
+    display:inline-block;
+    font-size:.72rem;
+    font-weight:700;
+    letter-spacing:.04em;
+    text-transform:uppercase;
+    padding:3px 10px;
+    border-radius:20px;
+    text-align:center;
+  }
+  .v-alta{color:var(--verde);background:#eafaf1;border:1px solid #a9dfbf;}
+  .v-fav{color:var(--azul-claro);background:#eef5fb;border:1px solid #aed6f1;}
+  .v-viable{color:var(--amarillo);background:#fdf6ec;border:1px solid #f9e79f;}
 </style>
 </head>
 <body>
@@ -252,29 +275,68 @@
     <div class="riesgo"><strong>Riesgo:</strong> es necesario definir consentimiento informado, accesos diferenciados por rol y políticas de retención/eliminación de datos personales.</div>
     <p><strong>Veredicto:</strong> factibilidad legal <strong>viable</strong>, siempre que se integren protocolos de seguridad y se limite el acceso a información sensible.</p>
 
-      <h3>Evidencias que comprometen o fortalecen la factibilidad</h3>
+   <h3>Evidencias que comprometen o fortalecen la factibilidad</h3>
     <p>La evidencia empírica recogida mediante las técnicas de elicitación permite identificar, por dimensión, qué fortalece el proyecto y qué requiere atención antes o durante el desarrollo:</p>
     <table>
-      <tr><th>Dimensión</th><th>Fortalece</th><th>Requiere atención</th></tr>
+      <tr><th>Dimensión</th><th>Fortalece</th>
+        <th>Requiere atención</th>
+      <th>Veredicto</th>
+      </tr>
       <tr>
         <td>Operativa</td>
         <td>El sistema actual es ineficiente y los tres perfiles de usuario manifiestan demanda genuina de digitalización, lo que refuerza la necesidad del SGPET.</td>
         <td>Capacitación inicial breve para asegurar la adopción plena.</td>
+        <td class="veredicto-cell">
+          <div class="veredicto-inner"><svg class="mini-gauge" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="42" fill="none" stroke="var(--borde)" stroke-width="8"/>
+            <circle cx="50" cy="50" r="42" fill="none" stroke="var(--verde)" stroke-width="8"
+              stroke-dasharray="264" stroke-dashoffset="20" stroke-linecap="round" transform="rotate(-90 50 50)"/>
+            <text x="50" y="57" text-anchor="middle" font-size="22" fill="var(--texto)">92%</text>
+          </svg>
+          <span class="dash-verdict v-alta">Alta</span></div>
+        </td>
       </tr>
       <tr>
         <td>Técnica</td>
         <td>La infraestructura institucional existente (computadoras, conectividad, equipos identificados) es suficiente.</td>
         <td>Estandarizar la identificación de equipos y definir protocolos de registro digital y respaldo.</td>
+        <td class="veredicto-cell">
+          <div class="veredicto-inner"><svg class="mini-gauge" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="42" fill="none" stroke="var(--borde)" stroke-width="8"/>
+            <circle cx="50" cy="50" r="42" fill="none" stroke="var(--verde)" stroke-width="8"
+              stroke-dasharray="264" stroke-dashoffset="26" stroke-linecap="round" transform="rotate(-90 50 50)"/>
+            <text x="50" y="57" text-anchor="middle" font-size="22" fill="var(--texto)">90%</text>
+          </svg>
+          <span class="dash-verdict v-alta">Alta</span></div>
+        </td>
       </tr>
       <tr>
         <td>Económica</td>
         <td>Los problemas actuales generan costos ocultos (tiempo, conflictos, fallas no registradas) que el SGPET reduce.</td>
         <td>El costo principal será el desarrollo del sistema y su mantenimiento a largo plazo.</td>
+        <td class="veredicto-cell">
+          <div class="veredicto-inner"><svg class="mini-gauge" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="42" fill="none" stroke="var(--borde)" stroke-width="8"/>
+            <circle cx="50" cy="50" r="42" fill="none" stroke="var(--azul-claro)" stroke-width="8"
+              stroke-dasharray="264" stroke-dashoffset="45" stroke-linecap="round" transform="rotate(-90 50 50)"/>
+            <text x="50" y="57" text-anchor="middle" font-size="22" fill="var(--texto)">83%</text>
+          </svg>
+          <span class="dash-verdict v-fav">Favorable</span></div>
+        </td>
       </tr>
       <tr>
         <td>Legal</td>
         <td>No hay impedimento normativo para el proyecto.</td>
         <td>El manejo de datos personales exige medidas de seguridad y políticas de acceso claras.</td>
+        <td class="veredicto-cell">
+          <div class="veredicto-inner"><svg class="mini-gauge" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="42" fill="none" stroke="var(--borde)" stroke-width="8"/>
+            <circle cx="50" cy="50" r="42" fill="none" stroke="var(--amarillo)" stroke-width="8"
+              stroke-dasharray="264" stroke-dashoffset="65" stroke-linecap="round" transform="rotate(-90 50 50)"/>
+            <text x="50" y="57" text-anchor="middle" font-size="22" fill="var(--texto)">76%</text>
+          </svg>
+          <span class="dash-verdict v-viable">Viable</span></div>
+        </td>
       </tr>
     </table>
     
