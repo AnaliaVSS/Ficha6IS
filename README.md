@@ -10,11 +10,16 @@ Este repositorio contiene el sitio web (index.html) donde se presenta el proyect
 
 El proyecto: contexto y problema a resolver.
 Técnicas de elicitación: entrevista estructurada, cuestionario y observación ("mosca en la pared") aplicadas para relevar requerimientos.
+
 FODA: fortalezas, oportunidades, debilidades y amenazas del proyecto.
 Factibilidad: análisis de factibilidad operativa, técnica, económica y legal, con evidencias, riesgos y conclusión de viabilidad.
+
 Anexos: pautas de entrevista, cuestionario y registros de observación.
 
-Bibliografía: fuentes utilizadas en el curso.
+Bibliografía: 
+Pressman, R. S., & Troya, J. M. (1988). Ingeniería del software.
+Pressman, Roger S. y Maxim, Bruce R. Ingeniería del Software. Un enfoque práctico.
+Sommerville, I. (2011). Ingeniería del software. Pearson Educación.
 
 Ver el sitio
 https://analiavss.github.io/Ficha6IS/
