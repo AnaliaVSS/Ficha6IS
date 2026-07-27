@@ -13,6 +13,8 @@ Técnicas de elicitación: entrevista estructurada, cuestionario y observación 
 FODA: fortalezas, oportunidades, debilidades y amenazas del proyecto.
 Factibilidad: análisis de factibilidad operativa, técnica, económica y legal, con evidencias, riesgos y conclusión de viabilidad.
 Anexos: pautas de entrevista, cuestionario y registros de observación.
+
 Bibliografía: fuentes utilizadas en el curso.
+
 Ver el sitio
 https://analiavss.github.io/Ficha6IS/
