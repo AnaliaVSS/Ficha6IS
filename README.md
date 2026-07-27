@@ -22,7 +22,7 @@ Este repositorio contiene el sitio web (`index.html`) donde se presenta el proye
 ## Bibliografía
 
 - Pressman, R. S., & Troya, J. M. (1988). *Ingeniería del software.*
-- Pressman, Roger S. y Maxim, Bruce R. (2021) *Ingeniería del Software. Un enfoque práctico.*
+- Pressman, Roger S. y Maxim, Bruce R. (2021). *Ingeniería del Software. Un enfoque práctico.*
 - Sommerville, I. (2011). *Ingeniería del software.* Pearson Educación.
 
 ## 🌐 Ver el sitio de la FICHA 6
