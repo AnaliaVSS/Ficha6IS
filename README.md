@@ -25,7 +25,7 @@ Este repositorio contiene el sitio web (`index.html`) donde se presenta el proye
 - Pressman, Roger S. y Maxim, Bruce R. *Ingeniería del Software. Un enfoque práctico.*
 - Sommerville, I. (2011). *Ingeniería del software.* Pearson Educación.
 
-## 🌐 Ver el sitio
+## 🌐 Ver el sitiode la FICHA 6
 
 [https://analiavss.github.io/Ficha6IS/](https://analiavss.github.io/Ficha6IS/)
 
